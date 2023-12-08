@@ -1,0 +1,22 @@
+.note {
+    border: 1px solid blue;
+}
+
+.email {
+    border: 1px solid green;
+}
+
+.todo {
+    border: 1px solid red;
+}
+/* Bonus Style */
+.form_div {
+    display: flex;
+
+}
+li {
+    margin-bottom: 10px;
+}
+form {
+    margin-right: 50px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task15</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form_div">
+      <form id="taskForm">
+        <input type="text" id="taskText" placeholder="Enter task" />
+        <select id="taskType">
+          <option value="note">Note</option>
+          <option value="email">Email</option>
+          <option value="todo">Todo</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+      <form id="searchForm">
+        <select id="searchType">
+          <option value="all">All</option>
+          <option value="note">Note</option>
+          <option value="email">Email</option>
+          <option value="todo">Todo</option>
+        </select>
+        <button type="submit">Search</button>
+        <button type="button" id="resetButton">Reset</button>
+      </form>
+      <form id="searchTextForm">
+        <input type="text" id="searchText" placeholder="Search something">
+        <button type="submit">Search</button>
+        <button type="button" id="resetSearch">Reset</button>
+      </form>
+    </div>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>

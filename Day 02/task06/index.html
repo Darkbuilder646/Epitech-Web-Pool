@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingPedia</title>
+    <link rel="stylesheet" href="codingpedia.css" />
+  </head>
+  <body>
+    <header class="box">
+      <h1>Welcome to CodingPedia!</h1>
+      <nav class="box">
+        <ul>
+          <li>Index</li>
+          <li>PHP</li>
+          <li>SQL</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="box">
+      <p>
+        CodingPedia is a collective encyclopedia project on the Internet aiming
+        to be universal and multi - lingual which functions as a wiki . <br />
+        CodingPedia has for goal to offer freely reusable objective and
+        verifiable content that anyone can modify and improve .
+      </p>
+      <article>
+        <form action="#">
+          <label for="lname">Name:</label><br />
+          <input type="text" id="" name="lname" value="" /><br />
+
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="" name="fname" value="" /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="" name="email" value="" /><br />
+
+          <label for="age">Age:</label><br />
+          <input type="number" id="" name="age" min="3" max="99" /><br />
+
+          <label for="phone">Phone:</label><br />
+          <input
+            type="tel"
+            id=""
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          /><br />
+
+          <label for="sex">Sex:</label><br />
+          <label for="sex">Male</label>
+          <input type="radio" id="" name="sex" value="male" /><br />
+          <label for="sex">Female</label>
+          <input type="radio" id="" name="sex" value="female" /><br />
+
+          <label for="hair">Hair Color:</label><br />
+          <input type="color" id="" name="haircolor" value="#000000" /><br />
+
+          <label for="date">Date:</label><br />
+          <input
+            type="datetime-local"
+            id=""
+            name="date"
+            value="26/09/2023"
+          /><br />
+
+          <label for="techno">Tchnology:</label><br />
+          <select name="techno" id="">
+            <option value="PHP">PHP</option>
+            <option value="SQL">SQL</option></select
+          ><br />
+
+          <label for="question">Question:</label><br />
+          <textarea name="question" id="" required></textarea><br />
+          <input type="submit" value="Submit" /> <br />
+        </form>
+      </article>
+    </main>
+    <aside class="box">
+      <p>Hello, my name is Theo and I work on HTML page</p>
+    </aside>
+    <footer class="box">
+      <address>
+        Lejeune <br />
+        Théo <br />
+        theo.lejeune@epitech.eu <br />
+        +33 7 82 03 44 35 <br />
+      </address>
+    </footer>
+  </body>
+</html>

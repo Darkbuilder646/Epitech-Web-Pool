@@ -1,0 +1,41 @@
+body {
+  background: gray;
+}
+
+.box {
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+.headContainer {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+header {
+  grid-column: 1;
+}
+
+nav {
+  grid-column: 2;
+}
+
+main {
+  flex-grow: 80;
+}
+
+aside {
+  flex-grow: 20;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+

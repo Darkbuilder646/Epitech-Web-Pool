@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 03</title>
+</head>
+<body>
+    <h1>Liste des Pays</h1>
+    <button id="loadCountries">Charger les pays</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Code de pays</th>
+                <th>Nom de pays</th>
+            </tr>
+        </thead>
+        <tbody id="countryTable">
+        </tbody>
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        document.getElementById('loadCountries').addEventListener('click', function () {
+            
+            fetch('countries.json')
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error('Erreur lors du chargement du fichier JSON.');
+                }
+                return response.json();
+            })
+            .then(function (data) {
+                const countryTable = document.getElementById('countryTable');
+                countryTable.innerHTML = '';
+                
+                for (const key in data) {
+                    if (data.hasOwnProperty(key)) {
+                        const country = data[key];
+                        const row = document.createElement('tr');
+                        const codeCell = document.createElement('td');
+                        codeCell.textContent = key;
+                        const nameCell = document.createElement('td');
+                        nameCell.textContent = country;
+                        row.appendChild(codeCell);
+                        row.appendChild(nameCell);
+                        countryTable.appendChild(row);
+                    }
+                }
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
+        });
+    </script>
+</body>
+</html>

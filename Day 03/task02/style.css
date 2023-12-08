@@ -1,0 +1,58 @@
+.emptySection {
+    height: 20vh;
+    background-color: greenyellow;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 0 0 1
+}
+
+#yellow {
+
+    background-color:gold;
+}
+
+#purple {
+
+    background-color:purple;
+}
+
+#pink {
+
+    background-color:pink;
+}
+
+article {
+    height: 20vh;
+    width: 33vw;
+}
+
+nav, section, article {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav {
+    height: 10vh;
+    background-color: cyan;
+}
+
+footer {
+    height: 10vh;
+    background-color: red;
+    position: sticky;
+    bottom: 0;  
+}
+
+@media (max-width: 767px) {
+    .item {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,90 @@
+.box {
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+.headContainer {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+body {
+  background: gray;
+}
+
+header {
+  grid-column: 1;
+}
+
+nav {
+  grid-column: 2;
+}
+
+main {
+  flex-grow: 80;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+label {
+  grid-column: 1;
+  margin-left: 20px;
+}
+
+input, select, textarea {
+  grid-column: 2;
+  margin-right: 20px;
+}
+
+label[for="male"], label[for="female"] {
+  grid-column: 2;
+  margin-left: 0px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+input[id=date] {
+  width: 200px;
+}
+
+input[type="submit"] {
+  width: 400px; 
+  height: 25px;
+  justify-self: end;
+  margin-top: 20px;
+
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 0 50px 50px 0;
+}
+
+aside {
+  flex-grow: 20;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+address {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+

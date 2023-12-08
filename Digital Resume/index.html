@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Resume</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c224d50d3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <div>
+        <h3 class="topbar_text">Theo Lejeune</h3>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#porfolio">Porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="top_wave">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color: #917be5" />
+        <stop offset="25%" style="stop-color: #bb6ed6" />
+        <stop offset="50%" style="stop-color: #dc5fbe" />
+        <stop offset="75%" style="stop-color: #f253a1" />
+        <stop offset="100%" style="stop-color: #ff4f81" />
+      </linearGradient>
+        <path
+          fill="url(#gradient)"
+          d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+          opacity=".25"
+      />
+        <path
+          fill="url(#gradient)"
+          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+          opacity=".5"
+        />
+        <path 
+          fill="url(#gradient)"
+          d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+      </svg>
+    </div>
+    <nav class="social">
+      <ul>
+        <li><a href="https://github.com/Darkbuilder646" rel="noopener noreferrer" target="_blank">Github </a><i class="fa fa-github fa-2xl icon_social"></i></li>
+        <li><a href="https://darkbuilder646.itch.io/" rel="noopener noreferrer" target="_blank">Itch.io </a><i class="fa-brands fa-itch-io fa-2xl icon_social"></i></li>
+        <li><a href="https://www.instagram.com/dark646_game/" rel="noopener noreferrer" target="_blank">Instagram </a><i class="fa fa-instagram fa-2xl icon_social"></i></li>
+        <li><a href="https://www.linkedin.com/in/th%C3%A9o-lejeune/" rel="noopener noreferrer" target="_blank">Linkedin </a><i class="fa fa-linkedin fa-2xl icon_social"></i></li>
+      </ul>
+    </nav>
+    <div class="main_container">
+      <main>
+        <!--//* Profil -->
+        <div class="container">
+          <h2>My profil</h2>
+         <div class="profil_container">
+           <div class="profil_card">
+             <h1>Lejeune Theo</h1>
+             <p>Student at Epitech, I am learning various technologies and programming languages to expand my knowledge.</p>
+             <span><i class="fa-solid fa-user icon_profil"></i>Developper</span>
+             <span><i class="fa-solid fa-at icon_profil"></i>theolejeune.sup@gmail.com</span>
+             <span><i class="fa-solid fa-location-dot icon_profil"></i>Lille</span>
+              <div class="profil_button">
+                <button type="button" class="button">Download CV</button>
+                <button type="button" class="button" onclick="location.href='#contact'">Contact me</button>
+              </div>
+           </div>
+           <div class="profil_pic_div">
+             <img class="profil_img" src="img/My_picture.jpg" alt="profil_picture">
+           </div>
+         </div>
+        </div>
+        <div class="container_light">
+          <div class="container">
+            <h2>About me</h2>
+            <div class="my_background_container">
+              <p>
+                Having been passionate about computer science since childhood, I began my professional career in the video game industry at <b>E-Artsup</b>, 
+                where I acquired and discovered many skills in <b>game design, level design, UI</b> and, in particular, programming with <b>C#</b> and <b>Unity</b>.<br /><br />
+                Now I'm continuing my studies at <b>Epitech</b>, where I'm reinforcing and discovering new technologies and programming languages
+                with <b>front-end</b> (html / CSS / JS) as well as <b>back-end</b> (PHP / JAVA), application development and <b>NSA</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2>My languages</h2>
+          <div class="langage_container">
+            <div class="langage_card">
+              <div class="langage_card_content">
+                <img class="langage_card_img" src="img/french_flag.png" alt="french_flag">
+                <p>Fench</p>
+                <p>Native language</p>
+              </div>
+            </div>
+            <div class="langage_card">
+              <div class="langage_card_content">
+                <img class="langage_card_img" src="img/english_flag.png" alt="english_flag">
+                <p>English</p>
+                <p>B1 level</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//* Experience Pro -->
+        <div class="container_light">
+          <div class="container">
+            <h2>My career path</h2>
+            <div class="experience_container">
+              <div class="experience_card">
+                <div>
+                  <img class="experience_card_img" src="img/Epitech.png" alt="Epitech_logo">
+                </div>
+                <div class="experience_card_content_text">
+                  <p>2023-2026</p>
+                  <h2>Epitech</h2>
+                  <h3>Msc-Pro</h3>
+                  <p>Lille, France</p>
+                </div>
+                <div>
+                  <a href="https://www.epitech.eu/en/" rel="noopener noreferrer" target="_blank" class="experience_card_button">
+                    <span class="button_text">Information</span>
+                    <span class="button_arrow">></span>
+                  </a>
+                </div>
+              </div>
+              <div class="experience_card">
+                <div>
+                  <img class="experience_card_img" src="img/logo-just-escape.png" alt="Just_Escape_logo">
+                </div>
+                <div class="experience_card_content_text">
+                  <p>2 months</p>
+                  <h2>Just Escape</h2>
+                  <h3>Game Design / Game Master</h3>
+                  <p>Lille, France</p>
+                </div>
+                <div>
+                  <a href="https://just-escape.fr/" rel="noopener noreferrer" target="_blank" class="experience_card_button">
+                    <span class="button_text">Information</span>
+                    <span class="button_arrow">></span>
+                  </a>
+                </div>
+              </div>
+              <div class="experience_card">
+                <div>
+                  <img class="experience_card_img" src="img/logo-E-Artsup.png" alt="E-Artsup_logo">
+                </div>
+                <div class="experience_card_content_text">
+                  <p>2020-2023</p>
+                  <h2>E-Artsup</h2>
+                  <h3>Bachelor</h3>
+                  <p>Lille, France</p>
+                </div>
+                <div>
+                  <a href="https://www.e-artsup.net/" rel="noopener noreferrer" target="_blank" class="experience_card_button">
+                    <span class="button_text">Information</span>
+                    <span class="button_arrow">></span>
+                  </a>
+                </div>
+              </div>
+              <div class="experience_card">
+                <div>
+                  <img class="experience_card_img" src="img/logo-nda.png" alt="NDA_logo">
+                </div>
+                <div class="experience_card_content_text">
+                  <p>2017-2019</p>
+                  <h2>NDA</h2>
+                  <h3>Bac S</h3>
+                  <p>St Amand les Eaux, France</p>
+                </div>
+                <div>
+                  <a href="https://www.nda59.fr/" rel="noopener noreferrer" target="_blank" class="experience_card_button">
+                    <span class="button_text">Information</span>
+                    <span class="button_arrow">></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//* Skill -->
+        <div id="skills"></div>
+        <div class="container">
+          <h2>My skills</h2>
+          <div class="skill_container">
+            <div class="left_container">
+              <h3>Some information</h3>
+              <p>Below are the main software programs I use, as well as the programming languages.</p>
+              <div>
+                <h4>Software :</h4>
+                <div class="software_badge">
+                  <span>Unity</span>
+                  <span>Git</span>
+                  <span>Adobe</span>
+                  <span>Figma</span>
+                </div>
+              </div>
+              <div>
+                <h4>Programming languages :</h4>
+                <div class="prog_language_badge">
+                  <span>C#</span>
+                  <span>Html</span>
+                  <span>CSS</span>
+                  <span>Python</span>
+                  <span>JAVA</span>
+                </div>
+              </div>
+            </div>
+            <div class="right_container">
+              <h3>Expertise :</h3>
+              <div class="div_progress_bar">
+                <div class="skill_div">
+                  <div class="skill_label">
+                    <div class="left_label">Unity</div>
+                    <div class="right_label">80%</div>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_bar_inner" style="--percent: 80%; --colorBar: #ff4f81;"></div>
+                  </div>
+                </div>
+                <div class="skill_div">
+                  <div class="skill_label">
+                    <div class="left_label">C#</div>
+                    <div class="right_label">75%</div>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_bar_inner" style="--percent: 75%; --colorBar: #ff4f81;"></div>
+                  </div>
+                </div>
+                <div class="skill_div">
+                  <div class="skill_label">
+                    <div class="left_label">Html</div>
+                    <div class="right_label">60%</div>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_bar_inner" style="--percent: 60%; --colorBar: #ff9900;"></div>
+                  </div>
+                </div>
+                <div class="skill_div">
+                  <div class="skill_label">
+                    <div class="left_label">CSS</div>
+                    <div class="right_label">50%</div>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_bar_inner" style="--percent: 50%; --colorBar: #ff9900;"></div>
+                  </div>
+                </div>
+                <div class="skill_div">
+                  <div class="skill_label">
+                    <div class="left_label">Python</div>
+                    <div class="right_label">30%</div>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_bar_inner" style="--percent: 30%; --colorBar: #7d8dff;"></div>
+                  </div>
+                </div>
+                <div class="skill_div">
+                  <div class="skill_label">
+                    <div class="left_label">JAVA</div>
+                    <div class="right_label">10%</div>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_bar_inner" style="--percent: 10%;  --colorBar: #7d8dff;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//* Profolio -->
+        <div id="porfolio"></div>
+        <div class="container_light">
+          <div class="container">
+            <h2>My last projects</h2>
+            <div class="porfolio_container">
+              <div class="porfolio_card">
+                <div class="porfolio_card_header">
+                  <img src="img/L_An_Baas.png" alt="L_An-Baa_logo" />
+                </div>
+                <div class="porfolio_card_body">
+                  <div class="porfolio_card_tags">
+                    <span class="tag_type">Game</span>
+                    <span class="tag_type">Unity</span>
+                    <span class="tag_language">C#</span>
+                  </div>
+                  <h3>L'An-Baa</h3>
+                  <p>Will you be able to resist Mum's call, 
+                    outwit her traps and avoid the dark corners to get back to the treetops ?
+                  </p>
+                  <div class="porfolio_div_button">
+                    <a href="https://furds.itch.io/l-an-baa" rel="noopener noreferrer" target="_blank" class="porfolio_card_button">
+                      <span class="button_text">See more</span>
+                      <span class="button_arrow">></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="porfolio_card">
+                <div class="porfolio_card_header">
+                  <img src="img/TheLastBreaker.png" alt="The_Last_Breaker_logo" />
+                </div>
+                <div class="porfolio_card_body">
+                  <div class="porfolio_card_tags">
+                    <span class="tag_type">Game</span>
+                    <span class="tag_type">Unity</span>
+                    <span class="tag_language">C#</span>
+                  </div>
+                  <h3>The Last Breaker</h3>
+                  <p>This is a game where you can play a brick breaker game.<br />
+                     But be careful, this game is quite old so don't be surprised if you find some glitches....
+                  </p>
+                  <div class="porfolio_div_button">
+                   <a href="https://darkbuilder646.itch.io/the-last-breaker" rel="noopener noreferrer" target="_blank" class="porfolio_card_button">
+                     <span class="button_text">See more</span>
+                     <span class="button_arrow">></span>
+                   </a>
+                  </div>    
+                </div>
+              </div>
+              <div class="porfolio_card">
+                <div class="porfolio_card_header">
+                  <img src="img/Mandelbrot_Fractals.jpg" alt="Mandelbrot_fractal" />
+                </div>
+                <div class="porfolio_card_body">
+                  <div class="porfolio_card_tags">
+                    <span class="tag_type">Program</span>
+                    <span class="tag_language">Python</span>
+                  </div>
+                  <h3>Fractal in Python</h3>
+                  <p>I just try to recreate the Mandelbrot fractal set using Python</p>
+                  <div class="porfolio_div_button">
+                    <a href="https://github.com/Darkbuilder646/Fractal-Python" rel="noopener noreferrer" target="_blank" class="porfolio_card_button">
+                      <span class="button_text">See more</span>
+                      <span class="button_arrow">></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact"></div>
+        <div class="container">
+          <h2>Contact me</h2>
+          <form>      
+            <input name="name" type="text" class="contact_input" placeholder="Name" />   
+            <input name="email" type="email" class="contact_input" placeholder="Email" />
+            <textarea name="text" class="contact_input" placeholder="Your message"></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form>
+        </div>
+      </main>
+      <div class="bottom_wave">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: #917be5" />
+          <stop offset="25%" style="stop-color: #bb6ed6" />
+          <stop offset="50%" style="stop-color: #dc5fbe" />
+          <stop offset="75%" style="stop-color: #f253a1" />
+          <stop offset="100%" style="stop-color: #ff4f81" />
+        </linearGradient>
+          <path
+            fill="url(#gradient)"
+            d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+            opacity=".25"
+        />
+          <path
+            fill="url(#gradient)"
+            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+            opacity=".5"
+          />
+          <path 
+            fill="url(#gradient)"
+            d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
